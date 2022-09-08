@@ -1,56 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
     <title>Conversions Network</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Template Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/preloader.min.css" rel="stylesheet">
+    <link href="css/circle.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- CSS Skin File -->
+    
+
+    
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <!-- Modernizr JS File -->
+    <script src="js/modernizr.custom.js"></script>
 </head>
+
 <body>
-    <div class="container">
-        <div class="calculator dark">
-            <div class="theme-toggler active">
-                <i class="toggler-icon"></i>
-            </div>
-            <div class="display-screen">
-                <div id="display"></div>
-            </div>
-            <div class="buttons">
-                <table>
-                    <tr>
-                        <td><button class="btn-operator" id="clear">C</button></td>
-                        <td><button class="btn-operator" id="/">&divide;</button></td>
-                        <td><button class="btn-operator" id="*">&times;</button></td>
-                        <td><button class="btn-operator" id="backspace"><</button></td>
-                    </tr>
-                    <tr>
-                        <td><button class="btn-number" id="7">7</button></td>
-                        <td><button class="btn-number" id="8">8</button></td>
-                        <td><button class="btn-number" id="9">9</button></td>
-                        <td><button class="btn-operator" id="-">-</button></td>
-                    </tr>
-                    <tr>
-                        <td><button class="btn-number" id="4">4</button></td>
-                        <td><button class="btn-number" id="5">5</button></td>
-                        <td><button class="btn-number" id="6">6</button></td>
-                        <td><button class="btn-operator" id="+">+</button></td>
-                    </tr>
-                    <tr>
-                        <td><button class="btn-number" id="1">1</button></td>
-                        <td><button class="btn-number" id="2">2</button></td>
-                        <td><button class="btn-number" id="3">3</button></td>
-                        <td rowspan="2"><button class="btn-equal" id="equal">=</button></td>
-                    </tr>
-                    <tr>
-                        <td><button class="btn-operator" id="(">(</button></td>
-                        <td><button class="btn-number" id="0">0</button></td>
-                        <td><button class="btn-operator" id=")">)</button></td>
-                    </tr>
-                </table>
-            </div>
+
+<!-- Header Starts -->
+<header class="header" id="navbar-collapse-toggle">
+    <!-- Fixed Navigation Starts -->
+    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+        <li class="icon-box active">
+            <i class="fa fa-home"></i>
+            <a href="index.html">
+                <h2>Home</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-calculator"></i>
+            <a href="calculator.html">
+                <h2>Calculator</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-exchange"></i>
+            <a href="portfolio.html">
+                <h2>Converter</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-comments"></i>
+            <a href="contact.html">
+                <h2>Contact</h2>
+            </a>
+        </li>
+    </ul>
+    <!-- Fixed Navigation Ends -->
+    <!-- Mobile Menu Starts -->
+    <nav role="navigation" class="d-block d-lg-none">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="list-unstyled" id="menu">
+                <li class="active"><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+                <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+                <li><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
+                <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+            </ul>
         </div>
-    </div>
-    <script src="script.js"></script>
+    </nav>
+    <!-- Mobile Menu Ends -->
+</header>
+<!-- Header Ends -->
+<!-- Template JS Files -->
+<script src="js/jquery-3.5.0.min.js"></script>
+<script src="js/styleswitcher.js"></script>
+<script src="js/preloader.min.js"></script>
+<script src="js/fm.revealator.jquery.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpGridGallery.js"></script>
+<script src="js/jquery.hoverdir.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/custom.js"></script>
+
 </body>
+
 </html>
