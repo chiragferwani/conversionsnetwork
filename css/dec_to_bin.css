@@ -16,8 +16,8 @@ body {
   top: 50%;
   left: 50%;
   border-radius: 0.62em;
-  box-shadow: 0 1.2em 2.5em rgba(255, 255, 255, 0.18);
-  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  box-shadow: 0 1.0em 2.0em rgba(0, 0, 0, 0.904);
+  background-image: linear-gradient(to top, #24243e, #302b63, #0f0c29);
 }
 h2 {
   font-size: 1.6em;
@@ -35,7 +35,7 @@ h2 {
 label {
   display: block;
   margin-bottom: 0.5em;
-  font-weight: 500;
+  font-weight: 600;
   color: white;
 }
 input {
@@ -45,7 +45,7 @@ input {
   padding: 0.5em;
   border-radius: 0.2em;
   border: 1.5px solid #43405c;
-  color: #43405c;
+  color: black;
   outline: none;
 }
 input:focus {

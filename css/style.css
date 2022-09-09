@@ -59,7 +59,7 @@ body {
   background-position: center;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  background-image: linear-gradient(to top, #24243e, #302b63, #0f0c29);
 }
 
 .poppins-font {
@@ -392,7 +392,7 @@ body.light hr.separator {
     transition: .3s;
     margin: 20px 0;
     border-radius: 50%;
-    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    background: transparent;
   }
 
   .header ul.icon-menu li.icon-box i {

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversions Network</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Template Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/dec_to_hex.css" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #0f0c29;
+            background-image: background-image: linear-gradient(to top, #24243e, #302b63, #0f0c29);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+        }
+        form {
+            width: 85vmin;
+            max-width: 37.5em;
+            padding: 3em 2.5em;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            border-radius: 0.62em;
+            box-shadow: 0 1.0em 2.0em rgba(0, 0, 0, 0.904);
+            background-image: linear-gradient(to top, #24243e, #302b63, #0f0c29);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        h1 {
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            font-size: 30px;
+        }
+        h2 {
+            font-size: 1.6em;
+            color: white;
+            text-align: center;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 1.3em;
+        }
+        label,
+        input,
+        button {
+            display: block;
+            margin-bottom: 0.5em;
+            font-weight: 600;
+            color: white;
+        }
+        label {
+            padding: 5px 0;
+        }
+        .btn-group {
+            display: flex;
+        }
+        input {
+            position: relative;
+            font-size: 1.1em;
+            width: 100%;
+            padding: 0.5em;
+            border-radius: 0.2em;
+            border: 1.5px solid white;
+            color: rgb(255, 255, 255);
+            outline: none;
+        }
+        .btn{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white;
+    width: 25em;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+        .output {
+            margin-top: 10px;
+            font-size: 1.2em;
+            background-color: transparent;
+            padding: 15px;
+            color: white;
+            text-align: left;
+            max-width: 330px;
+            word-wrap: break-word;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<header class="header" id="navbar-collapse-toggle">
+        <!-- Fixed Navigation Starts -->
+        <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+            <li class="icon-box active">
+                <i class="fa fa-home"></i>
+                <a href="index.html">
+                    <h2>Home</h2>
+                </a>
+            </li>
+            <li class="icon-box">
+                <i class="fa fa-calculator"></i>
+                <a href="calculator.html">
+                    <h2>Calculator</h2>
+                </a>
+            </li>
+            <li class="icon-box">
+                <i class="fa fa-exchange"></i>
+                <a href="converter.html">
+                    <h2>Converter</h2>
+                </a>
+            </li>
+            <li class="icon-box">
+                <i class="fa fa-comments"></i>
+                <a href="contact.html">
+                    <h2>Contact</h2>
+                </a>
+            </li>
+        </ul>
+        
+</header>
+    <form action="" method="post">
+        <h2><label for="txtNumber">Decimal Number:</label></h2>
+        <div class="btn">
+            <input type="number" name="txtNumber" id="txtNumber" autofocus required>
+            <button type="submit">Convert</button>
+        </div>
+        <div class="output hidden"></div>
+    </form>
+    
+    <script>
+        document.querySelector('form').onsubmit  = (e) => {
+            e.preventDefault()
+
+            let number = parseInt(document.querySelector('#txtNumber').value),
+                output = document.querySelector('.output')
+            
+            result = number.toString(16)
+            output.classList.remove("hidden")
+            output.innerHTML = 'Hexadecimal Value: ' + result
+        }
+    </script>
+</body>
+</html>

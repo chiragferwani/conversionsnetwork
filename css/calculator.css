@@ -16,7 +16,9 @@ a {
 }
 
 body {
-    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+
+background-image: linear-gradient(to top, #24243e, #302b63, #0f0c29);
+
 }
 
 .container {
