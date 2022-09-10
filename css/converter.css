@@ -11,14 +11,14 @@ body{
     font-family: "Roboto", sans-serif;
     font-size: 18px;
     font-weight: bold;
-    background-color: #0e0a3385;
+    background-color: white;
     width: 200px;
     padding: 20px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    color: #fff;
-    border-radius: 10px;
+    color: black;
+    border-radius: 15px;
     cursor: pointer;
     box-shadow: 0 0 10px rgb(0, 0, 0);
     -webkit-transition-duration: 0.3s;
@@ -36,4 +36,9 @@ body{
     height: auto;
     display: inline-block;
   }
+
+h4{
+    font-size: small;
+    font-weight: bold;
+}
       

@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/dec_to_bin.css" />
+    <link rel="stylesheet" href="css/dec_to_oct.css" />
     <link href="css/style.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
   </head>
@@ -50,20 +50,20 @@
         </header>
     
     <div class="container">
-      <h2>Decimal <i class="fa fa-exchange"></i> Binary Converter</h2>
+      <h2>Hex <i class="fa fa-exchange"></i> Decimal Converter</h2>
       <div class="wrapper">
+        <div class="input-wrapper">
+            <label for="bin-inp">Hex:</label>
+            <input type="number" id="bin-inp" />
+          </div>
         <div class="input-wrapper">
           <label for="dec-inp">Decimal:</label>
           <input type="number" id="dec-inp" />
-        </div>
-        <div class="input-wrapper">
-          <label for="bin-inp">Binary:</label>
-          <input type="number" id="bin-inp" />
         </div>
       </div>
       <p id="error-msg"></p>
     </div>
     <!-- Script -->
-    <script src="js/dec_to_bin.js"></script>
+    <script src="js/hex_to_dec.js"></script>
   </body>
 </html>

@@ -42,7 +42,7 @@
             left: 50%;
             border-radius: 0.62em;
             box-shadow: 0 1.0em 2.0em rgba(0, 0, 0, 0.904);
-            background-image: linear-gradient(to top, #24243e, #302b63, #0f0c29);
+            background-color: white;
         }
         h1, h2 {
             text-align: center;
@@ -53,8 +53,9 @@
             font-size: 30px;
         }
         h2 {
+            font-family: "Roboto", sans-serif;
             font-size: 1.6em;
-            color: white;
+            color: black;
             text-align: center;
             font-weight: 600;
             letter-spacing: 0.5px;
@@ -66,16 +67,15 @@
             display: block;
             margin-bottom: 0.5em;
             font-weight: 600;
-            color: white;
+            color: black;
         }
         label {
             padding: 5px 0;
         }
-        .btn-group {
-            display: flex;
-        }
+        
         input {
             position: relative;
+            background-color: black;
             font-size: 1.1em;
             width: 100%;
             padding: 0.5em;
@@ -85,30 +85,54 @@
             outline: none;
         }
         .btn{
-    font-family: "Roboto", sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: white;
-    width: 25em;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #fff;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgb(255, 255, 255);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: box-shadow, transform;
-    transition-property: box-shadow, transform;
-}
+            font-family: "Roboto", sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: white;
+            width: 8em;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: black;
+            border-radius: 40%;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgb(0, 0, 0);
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-property: box-shadow, transform;
+            transition-property: box-shadow, transform;
+        }
+        .btn:hover, .btn:focus, .btn:active{
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+        .xyz{
+            font-family: "Roboto", sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #fff;
+            width: 25em;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #0906279a;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgb(0, 0, 0);
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-property: box-shadow, transform;
+            transition-property: box-shadow, transform;
+        }
         .output {
             margin-top: 10px;
             font-size: 1.2em;
             background-color: transparent;
             padding: 15px;
-            color: white;
+            color: black;
             text-align: left;
             max-width: 330px;
             word-wrap: break-word;
@@ -120,7 +144,7 @@
         }
     </style>
 </head>
-<body>
+<body background="img/patterns.jpg">
 <header class="header" id="navbar-collapse-toggle">
         <!-- Fixed Navigation Starts -->
         <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
@@ -152,11 +176,12 @@
         
 </header>
     <form action="" method="post">
-        <h2><label for="txtNumber">Decimal Number:</label></h2>
-        <div class="btn">
-            <input type="number" name="txtNumber" id="txtNumber" autofocus required>
-            <button type="submit">Convert</button>
-        </div>
+        <h2><label for="txtNumber">Enter Decimal Number :</label></h2>
+        <div class="xyz">
+            <input type="number" name="txtNumber" id="txtNumber">
+            
+        </div> 
+            <button class="btn" type="submit">Convert</button>
         <div class="output hidden"></div>
     </form>
     

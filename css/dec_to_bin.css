@@ -17,11 +17,11 @@ body {
   left: 50%;
   border-radius: 0.62em;
   box-shadow: 0 1.0em 2.0em rgba(0, 0, 0, 0.904);
-  background-image: linear-gradient(to top, #24243e, #302b63, #0f0c29);
+  background-color: white;
 }
 h2 {
   font-size: 1.6em;
-  color: white;
+  color: black;
   text-align: center;
   font-weight: 600;
   letter-spacing: 0.5px;
@@ -35,24 +35,25 @@ h2 {
 label {
   display: block;
   margin-bottom: 0.5em;
-  font-weight: 600;
-  color: white;
+  font-weight: 800;
+  color: black;
 }
 input {
   position: relative;
   font-size: 1.1em;
+  font-weight: 600;
   width: 100%;
   padding: 0.5em;
   border-radius: 0.2em;
-  border: 1.5px solid #43405c;
+  border: 1.5px solid black;
   color: black;
   outline: none;
 }
 input:focus {
-  border-color: #0075ff;
+  border-color: black;
 }
 #error-msg {
   text-align: center;
   margin-top: 1.25em;
-  color: #ff4362;
+  color: black;
 }
