@@ -1,0 +1,41 @@
+<!doctype HTML>
+
+<html>
+
+    <head>
+    
+        <title>Bit Converter</title>
+        
+        <script src="js/dummy.js"></script>
+        
+    </head>
+    
+    <body>
+    
+        <div>
+            <h2>Binary</h2>
+            <input id="bin"><br />
+            <button onclick="convert(document.getElementById('bin').value, 'binOutput', 'bin', 'dec')">Convert to Decimal</button><br />
+            <button onclick="convert(document.getElementById('bin').value, 'binOutput', 'bin', 'hex')">Convert to Hex</button><br />
+            <span id="binOutput"></span>
+        </div>
+        
+        <div>
+            <h2>Decimal</h2>
+            <input id="dec"><br />
+            <button onclick="convert(document.getElementById('dec').value, 'decOutput', 'dec', 'bin')">Convert to Binary</button><br />
+            <button onclick="convert(document.getElementById('dec').value, 'decOutput', 'dec', 'hex')">Convert to Hex</button><br />
+            <span id="decOutput"></span>
+        </div>
+        
+        <div>
+            <h2>Hex</h2>
+            <input id="hex"><br />
+            <button onclick="convert(document.getElementById('hex').value, 'hexOutput', 'hex', 'bin')">Convert to Binary</button><br />
+            <button onclick="convert(document.getElementById('hex').value, 'hexOutput', 'hex', 'dec')">Convert to Decimal</button><br />
+            <span id="hexOutput"></span>
+        </div>
+    
+    </body>
+
+</html>

@@ -11,10 +11,13 @@ body{
     font-family: "Roboto", sans-serif;
     font-size: 18px;
     font-weight: bold;
+    align-items: left;
     background-color: white;
     width: 200px;
     padding: 20px;
     text-align: center;
+    display: block;
+    white-space: nowrap;
     text-decoration: none;
     text-transform: uppercase;
     color: black;
@@ -34,9 +37,16 @@ body{
 .space {
     width: 40px;
     height: auto;
-    display: inline-block;
+    display: block;
   }
-
+ul {
+    list-style-type: none;
+    display: inline-block;
+    align-items: left;
+}
+ul li {
+    display: inline;
+}
 h4{
     font-size: small;
     font-weight: bold;

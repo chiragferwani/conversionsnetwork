@@ -18,6 +18,9 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/clock.css" rel="stylesheet">
+    <link href="text__animation.css" rel="stylesheet">
+
 
     <!-- CSS Skin File -->
     
@@ -29,7 +32,7 @@
     <script src="js/modernizr.custom.js"></script>
 </head>
 
-<body background="img/design.png">
+<body background="img/design.png" height="100%" width="100%">
 
 <!-- Header Starts -->
 <header class="header" id="navbar-collapse-toggle">
@@ -63,7 +66,50 @@
     <!-- Fixed Navigation Ends -->
 </header>
 <!-- Header Ends -->
+<!--Clock Starts-->
+<div class="clock">
+    <div class="hour hand" id="hour"></div>
+    <div class="minute hand" id="minute"></div>
+    <div class="seconds hand" id="seconds"></div>
+    <img src="img/clock.png" height="220px" width="220px" alt="clock">
+</div>
+<!--Clock ends-->
+<!--Text Animation-->
+<div class="waviy">
+    <span style="--i:1">w</span>
+    <span style="--i:2">e</span>
+    <span style="--i:3">l</span>
+    <span style="--i:4">c</span>
+    <span style="--i:5">o</span>
+    <span style="--i:6">m</span>
+    <span style="--i:7">e</span>
+    <span style="--i:8"></span>&nbsp;&nbsp;&nbsp;
+    <span style="--i:9">t</span>
+    <span style="--i:10">o</span>
+   
+   </div>
+   <br>
+    <svg width="100%" height="100%">
+      <defs>
+         
+          <style>
+       @import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
+     </style>
+        
+      </defs>
+                
+      <rect x="0" y="0" width="100%" height="100%" fill="url(#polka-dots)"> </rect>
+       
+      
+     
+   <text x="50%" y="60%"  text-anchor="middle"  >
+     Conversions Network
+   </text>
+   </svg>
+  
 <!-- Template JS Files -->
+<script src="js/text_animation.js"></script>
+<script src="js/clock.js"></script>
 <script src="js/jquery-3.5.0.min.js"></script>
 <script src="js/styleswitcher.js"></script>
 <script src="js/preloader.min.js"></script>
